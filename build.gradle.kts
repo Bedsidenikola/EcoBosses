@@ -19,6 +19,7 @@ dependencies {
     project(":eco-core").dependencyProject.subprojects {
         implementation(this)
     }
+    implementation'com.github.Auxilot:libreforge:4.37.0'
 }
 
 allprojects {
