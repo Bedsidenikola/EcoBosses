@@ -49,7 +49,9 @@ allprojects {
     }
 
     tasks {
-        
+        shadowJar {
+            relocate("com.willfp.libreforge.loader", "com.willfp.ecobosses.libreforge.loader")
+        }
 
         compileKotlin {
             kotlinOptions {
